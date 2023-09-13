@@ -260,86 +260,6 @@
     right: 40px;
 }
 
-@media only screen and (max-width:992px) {
-
-    .document_icon,
-    .folder_icon,
-    .upload_icon {
-        width: 20%;
-    }
-
-    .folder_icon {
-        left: 40%;
-    }
-
-    .upload_icon {
-        right: 14%;
-    }
-}
-
-/* screen for Mobile */
-
-@media only screen and (max-width:769px) {
-    :root {
-        background-image: url(images/bg-mobile.png);
-        background-size: cover;
-    }
-
-    .first_card {
-        width: 70%;
-        height: 22%;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .document_icon,
-    .folder_icon,
-    .upload_icon {
-        width: 15%;
-    }
-
-    .document_icon {
-        bottom: 0%;
-        left: 15%;
-    }
-
-    .folder_icon {
-        bottom: 0%;
-        left: 35%;
-    }
-
-    .upload_icon {
-        bottom: 0%;
-        right: 30%;
-    }
-
-    .second_card {
-        width: 70%;
-        position: absolute;
-        top: 52%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .floating-msg-container {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%, -50%);
-        align-items: center;
-    }
-
-    .msg {
-        border-radius: 10px;
-    }
-
-    .triangle {
-        display: none;
-    }
-}
-
 /*! start Attribution */
 .attribution {
     position: relative;
@@ -370,10 +290,106 @@
 }
 
 /*! end Attribution */
-@media only screen and (max-width:400px) {
-    .first_card {
-        top: 28%;
+
+/* screen for desktop */
+
+@media only screen and (max-width:992px) {
+
+    .document_icon,
+    .folder_icon,
+    .upload_icon {
+        width: 20%;
     }
+
+    .folder_icon {
+        left: 40%;
+    }
+
+    .upload_icon {
+        right: 14%;
+    }
+}
+
+/* screen for Mobile */
+
+@media only screen and (max-width:769px) {
+    :root {
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+    }
+
+    .all_card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        margin: 120px auto;
+    }
+
+    .first_card {
+        width: 90%;
+        height: auto;
+        padding: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+    }
+
+    .document_icon,
+    .folder_icon,
+    .upload_icon {
+        width: 15%;
+    }
+
+    .document_icon {
+        bottom: 0%;
+        left: 15%;
+    }
+
+    .folder_icon {
+        bottom: 0%;
+        left: 35%;
+    }
+
+    .upload_icon {
+        bottom: 0%;
+        right: 30%;
+    }
+
+    .second_card {
+        width: 90%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+    }
+
+    .floating-msg-container {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+    }
+
+    .msg {
+        border-radius: 10px;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    .attribution {
+        top: 0rem;
+    }
+}
+
+@media only screen and (max-width:400px) {
 
     .document_icon,
     .folder_icon,
@@ -387,9 +403,5 @@
 
     .upload_icon {
         right: 20%;
-    }
-
-    .attribution {
-        top: 46rem;
     }
 }
